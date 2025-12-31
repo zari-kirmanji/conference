@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>کۆنفرانسی زانستیی زاری کرمانجی | Zari Kirmanji Scientific Conference</title>
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -948,14 +949,14 @@
         }
 
         .tl-date {
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 800;
             color: var(--amber-600);
             margin-bottom: 8px;
         }
 
         .tl-text {
-            font-size: 16px;
+            font-size: 20px;
             color: var(--charcoal);
             line-height: 1.7;
         }
@@ -1192,14 +1193,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 700;
             color: var(--white);
             flex-shrink: 0;
         }
 
         .guide-text {
-            font-size: 14px;
+            font-size: 16px;
             color: rgba(255,255,255,0.8);
             line-height: 1.7;
         }
@@ -1215,12 +1216,12 @@
         .submission-cta p {
             color: var(--slate-400);
             margin-bottom: 15px;
-            font-size: 15px;
+            font-size: 30px;
         }
 
         .submission-cta a {
             font-family: 'DM Serif Display', serif;
-            font-size: 26px;
+            font-size: 36px;
             color: var(--amber-400);
             text-decoration: none;
             transition: all 0.3s;
@@ -1340,7 +1341,14 @@
             font-size: 22px;
             flex-shrink: 0;
         }
-
+        .email-icon {
+	    font-size: 22px;
+	    color: #f5a623; /* adjust to your theme */
+	    text-decoration: none;
+	}
+	.email-icon:hover {
+	    opacity: 0.8;
+	}
         .contact-label {
             font-size: 12px;
             font-weight: 700;
@@ -1780,10 +1788,16 @@
                         <div class="guide-item"><div class="guide-num">6</div><p class="guide-text"><span class="ku">سیستەمی هارڤارد بۆ سەرچاوەگرتن</span><span class="en">Harvard referencing system</span></p></div>
                     </div>
 
-                    <div class="submission-cta">
-                        <p><span class="ku">توێژینەوەکەت بنێرە بۆ:</span><span class="en">Send your paper to:</span></p>
-                        <a href="mailto:zari.kirmanji@soran.edu.iq">zari.kirmanji@soran.edu.iq</a>
-                    </div>
+			<div class="submission-cta">
+			    <p>
+				<span class="ku">توێژینەوەکەت بنێرە بۆ:</span>
+				<span class="en">Send your paper to:</span>
+			    </p>
+			    <a href="mailto:zari.kirmanji@soran.edu.iq" class="email-icon" aria-label="Send email">
+				<i class="fa fa-envelope"></i>
+			    </a>
+			</div>
+
                 </div>
             </div>
         </div>
