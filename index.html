@@ -1523,6 +1523,114 @@
         .stagger.visible > *:nth-child(6) { transition-delay: 0.35s; }
         .stagger.visible > *:nth-child(7) { transition-delay: 0.4s; }
         .stagger.visible > *:nth-child(8) { transition-delay: 0.45s; }
+        /* ===================== RESOURCES SECTION ===================== */
+	#resources {
+	    background: linear-gradient(135deg, var(--amber-50) 0%, var(--pearl) 100%);
+	    padding: 100px 40px;
+	}
+
+	.resources-grid {
+	    display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	    gap: 30px;
+	    max-width: 900px;
+	    margin: 0 auto;
+	}
+
+	@media (max-width: 700px) {
+	    .resources-grid { grid-template-columns: 1fr; }
+	}
+
+	.resource-card {
+	    background: var(--white);
+	    border-radius: 24px;
+	    padding: 40px;
+	    text-align: center;
+	    border: 2px solid var(--silver);
+	    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+	    position: relative;
+	    overflow: hidden;
+	}
+
+	.resource-card::before {
+	    content: '';
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 5px;
+	    background: linear-gradient(90deg, var(--amber-400), var(--amber-600));
+	    transform: scaleX(0);
+	    transition: transform 0.3s;
+	}
+
+	.resource-card:hover {
+	    border-color: var(--amber-400);
+	    box-shadow: 0 20px 50px rgba(245,158,11,0.15);
+	    transform: translateY(-8px);
+	}
+
+	.resource-card:hover::before {
+	    transform: scaleX(1);
+	}
+
+	.resource-icon {
+	    width: 80px;
+	    height: 80px;
+	    background: linear-gradient(135deg, var(--amber-100), var(--amber-200));
+	    border-radius: 24px;
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    font-size: 36px;
+	    margin: 0 auto 24px;
+	    box-shadow: 0 10px 30px rgba(245,158,11,0.2);
+	}
+
+	.resource-title {
+	    font-family: 'Vazirmatn', sans-serif;
+	    font-size: 20px;
+	    font-weight: 700;
+	    color: var(--midnight);
+	    margin-bottom: 12px;
+	    line-height: 1.5;
+	}
+
+	body.english .resource-title {
+	    font-family: 'Fraunces', serif;
+	    font-weight: 600;
+	}
+
+	.resource-desc {
+	    font-size: 14px;
+	    color: var(--slate-500);
+	    line-height: 1.8;
+	    margin-bottom: 24px;
+	}
+
+	.resource-btn {
+	    display: inline-flex;
+	    align-items: center;
+	    gap: 10px;
+	    padding: 14px 28px;
+	    background: linear-gradient(135deg, var(--amber-500), var(--amber-600));
+	    color: var(--white);
+	    text-decoration: none;
+	    border-radius: 12px;
+	    font-size: 14px;
+	    font-weight: 700;
+	    transition: all 0.3s;
+	    box-shadow: 0 4px 15px rgba(245,158,11,0.3);
+	}
+
+	.resource-btn:hover {
+	    transform: translateY(-2px);
+	    box-shadow: 0 8px 25px rgba(245,158,11,0.4);
+	}
+
+	.resource-btn i {
+	    font-size: 18px;
+	}
     </style>
 </head>
 <body>
@@ -1578,6 +1686,9 @@
     <!-- NAV -->
     <nav class="main-nav">
         <div class="nav-inner">
+                <a href="#" class="nav-logo">
+            <img src="images/logo00.jpg" alt="Soran University" style="height: 45px; width: auto; margin-left: 20px;">
+        </a>
             <a href="#about" class="nav-link"><span class="ku">دەربارە</span><span class="en">About</span></a>
             <a href="#objectives" class="nav-link"><span class="ku">ئامانجەکان</span><span class="en">Objectives</span></a>
             <a href="#topics" class="nav-link"><span class="ku">بابەتەکان</span><span class="en">Topics</span></a>
@@ -1585,6 +1696,7 @@
             <a href="#abstract-guidelines" class="nav-link"><span class="ku">ڕێنمایی پوختە</span><span class="en">Abstract Guide</span></a>
             <a href="#committee" class="nav-link"><span class="ku">لیژنە</span><span class="en">Committee</span></a>
             <a href="#submission" class="nav-link"><span class="ku">توێژینەوە</span><span class="en">Submission</span></a>
+            <a href="#resources" class="nav-link"><span class="ku">سەرچاوەکان</span><span class="en">Resources</span></a>
             <a href="#gallery" class="nav-link"><span class="ku">گالەری</span><span class="en">Gallery</span></a>
             <a href="#contact" class="nav-link"><span class="ku">پەیوەندی</span><span class="en">Contact</span></a>
         </div>
@@ -2689,7 +2801,51 @@ function toggleAccordion(button) {
             </div>
         </div>
     </section>
+<!-- RESOURCES / DOWNLOADS -->
+<section id="resources">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-icon">📥</div>
+            <span class="section-label"><span class="ku">داگرتن</span><span class="en">Downloads</span></span>
+            <h2 class="section-title"><span class="ku">سەرچاوەکان و بەڵگەنامەکان</span><span class="en">Resources & Documents</span></h2>
+            <p class="section-desc"><span class="ku">سەرچاوە گرنگەکانی کۆنفرانس بۆ داگرتن</span><span class="en">Download important conference documents</span></p>
+        </div>
 
+        <div class="resources-grid stagger">
+            <!-- Resource 1 -->
+            <div class="resource-card reveal">
+                <div class="resource-icon">📄</div>
+                <h3 class="resource-title">
+                    <span class="ku">سەرچاوەی یەکەم</span>
+                    <span class="en">Document 1</span>
+                </h3>
+                <a href="https://drive.google.com/file/d/1andPG26Q5X_nCw9iUpg_maBkikky_zbV/view?usp=sharing" 
+                   target="_blank" 
+                   class="resource-btn">
+                    <i class="fas fa-download"></i>
+                    <span class="ku">داگرتن</span>
+                    <span class="en">Download PDF</span>
+                </a>
+            </div>
+
+            <!-- Resource 2 -->
+            <div class="resource-card reveal">
+                <div class="resource-icon">📑</div>
+                <h3 class="resource-title">
+                    <span class="ku">سەرچاوەی دووەم</span>
+                    <span class="en">Document 2</span>
+                </h3>
+                <a href="https://drive.google.com/file/d/1sV-Gx7ctklFcs-7oWXI-yZuKTM5vA9zY/view?usp=sharing" 
+                   target="_blank" 
+                   class="resource-btn">
+                    <i class="fas fa-download"></i>
+                    <span class="ku">داگرتن</span>
+                    <span class="en">Download PDF</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
     <!-- GALLERY -->
     <section id="gallery">
         <div class="container">
@@ -2740,7 +2896,7 @@ function toggleAccordion(button) {
                     <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label"><span class="ku">ئیمەیڵ</span><span class="en">Email</span></div><div class="contact-value"><a href="mailto:zari.kirmanji@soran.edu.iq">zari.kirmanji@soran.edu.iq</a></div></div></div>
                     <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label"><span class="ku">شوێن</span><span class="en">Location</span></div><div class="contact-value"><span class="ku">زانکۆی سۆران، هەرێمی کوردستان</span><span class="en">Soran University, Kurdistan Region</span></div></div></div>
                     <div class="contact-item"><div class="contact-icon">🌐</div><div><div class="contact-label"><span class="ku">ماڵپەڕ</span><span class="en">Website</span></div><div class="contact-value"><a href="https://main.soran.edu.iq" target="_blank">main.soran.edu.iq</a></div></div></div>
-                    <div class="contact-item"><div class="contact-icon">👤</div><div><div class="contact-label"><span class="ku">هاوکاری</span><span class="en">Coordinator</span></div><div class="contact-value"><span class="ku">دادیار ئازاد، رزوان فیروزی، محەمەد مەحمود </span><span class="en">Mr. Dadyar Azad</span></div></div></div>
+                    <div class="contact-item"><div class="contact-icon">👤</div><div><div class="contact-label"><span class="ku">هاوکاری</span><span class="en">Coordinator</span></div><div class="contact-value"><span class="ku">دادیار ئازاد، رزوان فیروزی، محەمەد مەحمود </span><span class="en">Dadyar Azad, Rezwan Firouzi, Mohammad Mahmud</span></div></div></div>
                 </div>
                 <div class="contact-map reveal">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25798!2d44.53!3d36.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSoran%20University!5e0!3m2!1sen!2siq" allowfullscreen="" loading="lazy"></iframe>
