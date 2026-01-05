@@ -1233,6 +1233,20 @@
             color: var(--amber-300);
         }
 
+        /* ===================== REQUIREMENTS ===================== */
+        .req-item:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        body.english .req-item {
+            border-right: none;
+            border-left: 4px solid var(--amber-500);
+        }
+
+        body.english .req-item:hover {
+            transform: translateX(5px);
+        }
         /* ===================== GALLERY ===================== */
         #gallery {
             background: var(--midnight);
@@ -2546,6 +2560,136 @@ function toggleAccordion(button) {
         </div>
     </section>
 
+
+    <!-- RESEARCH REQUIREMENTS -->
+    <section id="requirements" style="background: var(--pearl); padding: 100px 40px;">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-icon" style="background: linear-gradient(135deg, var(--amber-100), var(--amber-200));">📜</div>
+                <span class="section-label" style="background: rgba(245,158,11,0.1); color: var(--amber-600);"><span class="ku">مەرجەکان</span><span class="en">Requirements</span></span>
+                <h2 class="section-title"><span class="ku">مەرجەکانی نووسینی توێژینەوە لە کۆنفرانس</span><span class="en">Conference Research Paper Requirements</span></h2>
+            </div>
+
+            <div class="requirements-container stagger" style="max-width: 1000px; margin: 0 auto;">
+                
+                <!-- Requirement 1 -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">١</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">توێژینەوەکان لە چوارچێوەی تەوەرەکانی کۆنفرانسدا بن و مەرجەکانی توێژینەوەی زانستی تێدا پەیرەو بکرێن.</span>
+                        <span class="en">Research papers must fall within the conference themes and follow scientific research standards.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 2 -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٢</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">توێژینەوەکان بەپێی پێناسەکانی گۆڤاری توێژەر پەسەند دەکرێن.</span>
+                        <span class="en">Research papers will be approved according to the Twejer Journal standards.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 3 -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٣</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">توێژینەوەکانی پێشکەشکراو ناونیشان، ناوی توێژەر، شوێنی کار، ناوی وڵات، پۆختەی توێژینەوە و وشە کلیلیەکان لەخۆ بگرن.</span>
+                        <span class="en">Submitted papers must include: title, researcher name, workplace, country name, abstract, and keywords.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 4 -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٤</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">توێژینەوەکان بڵاوکراوەکان یان پەسەندکراوان لە کۆنفرانسی تر یان گۆڤارەکان قبوڵ ناکرێن.</span>
+                        <span class="en">Previously published or accepted papers in other conferences or journals will not be accepted.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 5 -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٥</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">توێژینەوەکان بە زمانی کوردی، عەرەبی و ئینگلیزی وەردەگیرێن.</span>
+                        <span class="en">Papers are accepted in Kurdish, Arabic, and English languages.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 6 -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٦</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">کۆی توێژینەوەکە لە ٣٠ لاپەڕە زیاتر نەبێت.</span>
+                        <span class="en">The total length of the paper must not exceed 30 pages.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 7 - Font Requirements -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٧</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">پێویستە توێژینەوە بە زمانی کوردی بە فۆنتی <strong style="color: var(--amber-600);">Unikurd Goran</strong> بنووسرێت، بۆ زمانی عەرەبی و ئینگلیزی بە فۆنتی <strong style="color: var(--amber-600);">Times New Roman</strong> بنووسرێت.</span>
+                        <span class="en">Kurdish papers must use <strong style="color: var(--amber-600);">Unikurd Goran</strong> font. Arabic and English papers must use <strong style="color: var(--amber-600);">Times New Roman</strong> font.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 8 - Harvard System -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٨</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">پێویستە توێژینەوەکان بۆ هەر سێ زمانی کۆنفرانس سیستەمی سەرچاوەگرتنی <strong style="color: var(--amber-600);">(هارڤارد)</strong> پەیرەو بکرێن.</span>
+                        <span class="en">All papers in all three conference languages must follow the <strong style="color: var(--amber-600);">Harvard</strong> referencing system.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 9 - Abstract Languages -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">٩</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">پێویستە پۆختەی توێژینەوەکان بە زمانی کوردی، پۆختەی (عەرەبی و ئینگلیزی) لەگەڵدابێت. بۆ توێژینەوەکان بە زمانی عەرەبی، پۆختەی (کوردی و ئینگلیزی) لەگەڵدابێت. بۆ توێژینەوەکان بە زمانی ئینگلیزی، پۆختەی کوردی و عەرەبی لە گەڵدابێت.</span>
+                        <span class="en">Kurdish papers must include Arabic & English abstracts. Arabic papers must include Kurdish & English abstracts. English papers must include Kurdish & Arabic abstracts.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 10 - Abstract Word Count -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">١٠</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">پێشکەشکراوی پۆختەی داواکراو پێویستە لەنێوان <strong style="color: var(--amber-600);">٢٥٠-٢٠٠</strong> وشە بێت، لەگەڵ سییەتی توێژەرەکە، ژمارەی مۆبایل و ئیمەیڵ.</span>
+                        <span class="en">The submitted abstract must be between <strong style="color: var(--amber-600);">200-250</strong> words, along with the researcher's CV, mobile number, and email.</span>
+                    </p>
+                </div>
+
+                <!-- Requirement 11 - Publication -->
+                <div class="req-item reveal" style="background: var(--white); border-radius: 20px; padding: 28px 32px; margin-bottom: 16px; border-right: 4px solid var(--amber-500); display: flex; align-items: flex-start; gap: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); transition: all 0.3s;">
+                    <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--amber-400), var(--amber-600)); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: white; flex-shrink: 0;">١١</div>
+                    <p style="color: var(--charcoal); font-size: 16px; line-height: 1.9; margin: 0;">
+                        <span class="ku">کۆی توێژینەوە بەپەسەندکراوان لە ژمارەیەکی تایبەتی گۆڤاری توێژەر، کە زانکۆی سۆران دەریدەکات بڵاودەکرێنەوە، بۆیە پێویستە هەموو مەرج و پێداویستیە زانستیەکانی تێدا بێت.</span>
+                        <span class="en">All approved papers will be published in a special issue of Twejer Journal by Soran University, therefore all scientific requirements must be met.</span>
+                    </p>
+                </div>
+
+                <!-- Important Note Box -->
+                <div class="req-note reveal" style="background: linear-gradient(135deg, var(--emerald-500), #059669); border-radius: 20px; padding: 32px; margin-top: 30px; display: flex; align-items: center; gap: 20px; box-shadow: 0 10px 40px rgba(16,185,129,0.25);">
+                    <div style="width: 56px; height: 56px; background: rgba(255,255,255,0.2); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0;">✨</div>
+                    <div>
+                        <h4 style="color: white; font-size: 18px; font-weight: 700; margin-bottom: 8px;">
+                            <span class="ku">تێبینی گرنگ</span>
+                            <span class="en">Important Note</span>
+                        </h4>
+                        <p style="color: rgba(255,255,255,0.95); font-size: 16px; line-height: 1.8; margin: 0;">
+                            <span class="ku">بەشداریوانی توێـــژەرەان لە کۆنفرانس و بڵاوکردنەوەی توێژینەوەکان لە گۆڤاری توێژەر بێ بەرامبەرە.</span>
+                            <span class="en">Researcher participation in the conference and publication of papers in Twejer Journal is free of charge.</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- GALLERY -->
     <section id="gallery">
         <div class="container">
@@ -2596,7 +2740,7 @@ function toggleAccordion(button) {
                     <div class="contact-item"><div class="contact-icon">✉️</div><div><div class="contact-label"><span class="ku">ئیمەیڵ</span><span class="en">Email</span></div><div class="contact-value"><a href="mailto:zari.kirmanji@soran.edu.iq">zari.kirmanji@soran.edu.iq</a></div></div></div>
                     <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label"><span class="ku">شوێن</span><span class="en">Location</span></div><div class="contact-value"><span class="ku">زانکۆی سۆران، هەرێمی کوردستان</span><span class="en">Soran University, Kurdistan Region</span></div></div></div>
                     <div class="contact-item"><div class="contact-icon">🌐</div><div><div class="contact-label"><span class="ku">ماڵپەڕ</span><span class="en">Website</span></div><div class="contact-value"><a href="https://main.soran.edu.iq" target="_blank">main.soran.edu.iq</a></div></div></div>
-                    <div class="contact-item"><div class="contact-icon">👤</div><div><div class="contact-label"><span class="ku">هاوکاری</span><span class="en">Coordinator</span></div><div class="contact-value"><span class="ku">دادیار ئازاد، رزوان فیروزی</span><span class="en">Mr. Dadyar Azad</span></div></div></div>
+                    <div class="contact-item"><div class="contact-icon">👤</div><div><div class="contact-label"><span class="ku">هاوکاری</span><span class="en">Coordinator</span></div><div class="contact-value"><span class="ku">دادیار ئازاد، رزوان فیروزی، محەمەد مەحمود </span><span class="en">Mr. Dadyar Azad</span></div></div></div>
                 </div>
                 <div class="contact-map reveal">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25798!2d44.53!3d36.65!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSoran%20University!5e0!3m2!1sen!2siq" allowfullscreen="" loading="lazy"></iframe>
